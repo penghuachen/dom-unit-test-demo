@@ -1,0 +1,17 @@
+{
+  "name": "sharingforunittest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/dom": "^6.15.0",
+    "@testing-library/jest-dom": "^5.1.1",
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jsdom": "^16.2.1"
+  }
+}
