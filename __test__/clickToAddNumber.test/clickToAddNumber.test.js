@@ -1,9 +1,8 @@
 const { fireEvent, getByTestId } = require('@testing-library/dom');
-require('@testing-library/jest-dom');
 
 describe('click button to add number', () => {
   test('test fn: addNumber', () => {
-    // arrange
+    // Arrange
     document.body.innerHTML = `
       <button data-testid="button">點擊+1</button>
       <p class="text">
@@ -21,10 +20,11 @@ describe('click button to add number', () => {
     const number = getByTestId(container, 'number');
     require('../../js/demo-click');
 
-    //Act
+    // Act
     fireEvent.click(btn);
-    
-    //assert
+    console.log(container.innerHTML);
+
+    // Assert
     const newValue = Number(number.textContent);
     expect(newValue).toBe(1);
   })
