@@ -12,6 +12,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "jsdom": "^16.2.1"
+    "jsdom": "^16.5.0"
   }
 }
